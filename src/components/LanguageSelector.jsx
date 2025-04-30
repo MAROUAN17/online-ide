@@ -8,8 +8,8 @@ function LanguageSelector({ language, changeLanguage }) {
             <Menu.Root>
             <Menu.Trigger asChild>
                 <Button variant="outline" size="sm">
-                    {language}
-                </Button>
+                    {language} 
+                </Button>   
             </Menu.Trigger>
             <Portal>
                 <Menu.Positioner>
