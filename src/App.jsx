@@ -1,4 +1,4 @@
-import CodeEditorBox from "./components/codeEditorBox.jsx"
+import CodeEditorBox from "./components/CodeEditorBox.jsx"
 import { Provider } from "@/components/ui/provider"
  
 function App() {
