@@ -1,12 +1,12 @@
 import CodeEditorBox from "./components/codeEditorBox.jsx"
-import Box from "@mui/material"
+import { Provider } from "@/components/ui/provider"
  
 function App() {
   return (
     <>
-      <Box minH="100vh" placeholder="please here!">
-        <CodeEditorBox />
-      </Box>
+      <Provider>
+          <CodeEditorBox />
+      </Provider>
     </>
   )
 }
