@@ -1,13 +1,12 @@
-import { Button, Menu, Portal, Text } from "@chakra-ui/react"
+import { Button, Menu, Portal, Text } from "@chakra-ui/react";
 import { Languages } from "../constants";
 
 function LanguageSelector({ language, changeLanguage }) {
     const langs = Object.entries(Languages);
     return (
-        <>
-            <Menu.Root>
+        <Menu.Root>
             <Menu.Trigger asChild>
-                <Button variant="outline" size="sm">
+                <Button variant="outline" size="lg" mb={9}>
                     {language} 
                 </Button>   
             </Menu.Trigger>
@@ -23,8 +22,7 @@ function LanguageSelector({ language, changeLanguage }) {
                 </Menu.Content>
                 </Menu.Positioner>
             </Portal>
-            </Menu.Root>
-        </>
+        </Menu.Root>
     )
 }
 
