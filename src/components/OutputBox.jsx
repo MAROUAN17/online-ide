@@ -1,12 +1,15 @@
+import { useState } from "react"
 import { executeCode } from "../api.js";
 import { Box, Text, Button } from "@chakra-ui/react";
 
 function OutputBox({editorRef, language}) {
+    const [output, setOutput] = useState(null);
     const runCode = async () => {
         const code = editorRef.current.getValue()
         if (!code) return;
         try {
             const res = await executeCode(language, code);
+            setOutput(res.run.output);
         } catch(error) {
             console.log(error.message);
         }
@@ -29,7 +32,7 @@ function OutputBox({editorRef, language}) {
                 borderRadius={4}
                 borderColor='#333'
             >
-                test
+                {output ? output : "Click 'Run Code' to see the output of your code" }
             </Box>
         </Box>
     )
