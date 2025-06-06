@@ -1,12 +1,18 @@
-# React + Vite
+## 🌐 Online IDE – Powered by Piston API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An online code editor and compiler built with **React** and integrated with the **Piston API**, which provides access to a wide range of language runtimes.
 
-Currently, two official plugins are available:
+### ✨ Key Features
+- 🔹 Multi-language support (Python, C, C++, Java, Go, Rust, etc.)
+- 🔹 Real-time code execution with input/output
+- 🔹 Fast and lightweight frontend using React
+- 🔹 Clean and minimal user interface
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🛠 Tech Stack
+- **Frontend:** React, chakraUI
+- **Backend API:** [Piston API](https://github.com/engineer-man/piston)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🚀 How It Works
+1. User writes code in the editor.
+2. Code is sent to the Piston API for execution.
+3. Output is returned and displayed in the UI.
